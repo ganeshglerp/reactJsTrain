@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Creation and Access</title>
+    <script src="object.js"></script>
+    <link rel="stylesheet" href="object.css">
+</head>
+<body>
+    <div>
+        <h1 class="h1">ES6 Objects</h1>
+        <div >
+            <span style="display: block;  margin: 10px; width: 650px; height: 105px;" >
+            <p>Objects are the collection of key/value pairs that can be modified throughout the lifecycle of an object. Objects allow us to define custom data types in JavaScript.</p>
+            <p>Unlike primitive data types, we can represent complex or multiple values using objects. The values can be the array of objects or the scalar values or can be the functions. Data inside objects are unordered, and the values can be of any type.</p>
+            </span>
+        </div>
+        
+        <h2 class="h2">Object Initializers</h2>
+        <div >
+            <span style="display: block;  margin: 10px; width: 650px; height: 350px;" >
+				<p>Like the primitive types, objects have a literal syntax: <strong>curly bracesv {...}</strong> along with an optional properties list. The property is a "key:value" pair, where the key is a string or a property name, and the value can be anything. Following is the syntax for defining an object.</p>
+                <pre class="codeSnip">
+                    var student = {
+                        studentFirstName:"Ganesh", studentFirstName:"Golla",
+						function () { ... }, 
+                        address: ["Bangalore","Hospet"] 
+                    } 
+                </pre>
+				<p>In ES6, assigning a property value that matches a property name, you can omit the property value.</p>
+                <pre class="codeSnip">
+                    var studnetDetaild = {student}
+                </pre>
+				<p><strong>Computed property names</strong>, which is a part of object literal syntax, and it uses the square bracket [] notation. It allows us to put an expression within the square brackets [] that will be computed and used as the name of the property</p>
+                <pre class="codeSnip">var department = 'GSS';  
+					var student = {  
+						studentId : 102,  
+						studentName : 'Ganesh Golla',  
+						[department]:'Production'  
+					}  
+                </pre>
+            </span>
+        </div>
+        
+        <h2 class="h2">The Object() Constructor</h2>
+        <div >
+            <span style="display: block;  margin: 10px; width: 650px; height: 350px;" >
+				<p>JavaScript provides a special constructor function called Object() to build the object. The new operator is used to create an instance of an object. To create an object, the new operator is followed by the constructor method</p>
+                <pre class="codeSnip">
+                    var student = new Object();
+					student.studentFirstName:"Ganesh"
+					student.studentFirstName:"Golla",
+					student.address: ["Bangalore","Hospet"] 
+                    console.log(student) 
+                </pre>
+            </span>
+        </div>
+        <h3>Task1: Define Student Profile</h3>
+        <pre class="codeSnip">
+            var studentProfile = { 
+				firstName:"Ganesh", 
+				lastName:"Golla",
+				class:{
+				  name: "Introduction to E6 JavaScript",
+				  teacher: {
+				    name: "Ajay Kumar",
+				    email: "kumar@jatanix.com"
+				  },
+				  grades:[
+				    {Maths: "A"},
+				    {Physics:"B"},
+				    {Chemistary:"B+"},
+				    {English:"A"}
+				  ],
+				},
+				func:function(){return "Assignment1 : Student details"} 
+			};
+        </pre>
+        
+        <h3>Task2: Accessing Propeties</h3>
+        <pre class="codeSnip">
+            <div>
+			//access the object values 
+			console.log(studentProfile.func());
+			console.log(studentProfile.firstName+" "+studentProfile.lastName);
+			console.log(studentProfile["class"]["name"]);
+			console.log(studentProfile.class.teacher.email);
+			console.log(studentProfile["class"]["teacher"]["email"]);
+			</div>
+			<div>
+			//Updating the Grade values
+			console.log("Beforing updating grade for Maths :"+studentProfile.class.grades[0].Maths);
+			studentProfile.class.grades[0].Maths="A+"
+			console.log(studentProfile);
+			console.log("Updated Value is :"+studentProfile["class"]["grades"][0].Maths);
+			</div>
+        </pre>
+    </div>
+    	
+</body>
+</html>

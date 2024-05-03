@@ -1,0 +1,22 @@
+body {
+    background-color: #e4f3f9;
+  }
+  h1 {
+    color: brown;
+    font-family: erdana,helvetica,arial,sans-serif;
+  }
+  h2 {
+    font-family: "Lato", sans-serif;
+    margin-top: 10px;
+    margin-top: 15px;
+  }
+  codeSnip{
+    padding: 15px;
+    color: black;
+    font-size: 15px;
+    overflow-x: auto;
+    border-radius: 8px;
+    line-height: 24px;
+    border: 0px;
+  }
+  
