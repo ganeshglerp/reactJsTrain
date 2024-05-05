@@ -1,39 +1,21 @@
-import SquareFunction,{SumFunction, MultFunction, DivFunction} from "./MathOperator.js"
+import SquareFunction, {sumFunction, multFunction} from "./MathOperator.js"
 
-class Calculate extends SquareFunction {
-    constructor(inputValue) {
-        super();
-    }
-
-    displayCube(sqrVal){
-        let val = super.cubeFunction(sqrVal);
-        console.log('Cube Value is '+val);
-        return val.output;
-    }
-
-    displaySquare(sqrVal){
-        let val = new SquareFunction(sqrVal);
-        console.log('Square Value is ');
-        return val.output;
-    }
-    
-    displaySum(sumVal1, sumVal2){
-        let val = new SumFunction(sumVal1,sumVal2);
-        console.log('Summation of value are ');
-        return val.output;
-    }
-    
-    displayMult(sumVal1, sumVal2){
-        let val = new MultFunction(sumVal1,sumVal2);
-        console.log('Multiplication of value are ');
-        return val.output;
-    }
-    
-    displayDiv(sumVal1, sumVal2){
-        let val = new DivFunction(sumVal1,sumVal2);
-        console.log('Division of value are ');
-        return val.output;
-    }
+function getSquare (a){
+    console.log(`Invoking square function for ${a}`);
+    let outValue = SquareFunction(a);
+    return outValue;
 }
 
-export default Calculate;
+export function getSum (a,b){
+    console.log(`Invoking addition function for ${a} and ${b}`);
+    let outValue = sumFunction(a,b);
+    return outValue;
+}
+
+export function getMult (a,b){
+    console.log(`Invoking multiplication function for ${a} and ${b}`);
+    let outValue = multFunction(a,b);
+    return outValue;
+}
+
+export default getSquare;

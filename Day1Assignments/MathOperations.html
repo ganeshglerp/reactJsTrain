@@ -5,14 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script type="Module">
-        import Calculate from './Calculate.js';
-        let x = new Calculate();
-        console.log(x.displaySquare(9));
-        console.log(x.displaySum(9,9));
-        console.log(x.displayMult(6,9));
-        console.log(x.displayDiv(9,0));
-        console.log(x.displayCube(6,9));
+        import CalculateInh from './CalculateClassInh.js';
+        let x = new CalculateInh();
+        console.log(x.displaySum(6,8));
+        console.log(x.MultFunction(6,8));
     </script>
+    <!-- <script type="Module">
+        import getSquare,{getSum, getMult} from './Calculate.js'; 
+        let outVal = getSum(9,4);
+        console.log(outVal);
+        outVal = getMult(9,4);
+        console.log(outVal);
+        outVal = getSquare(9);
+        console.log(outVal);
+    </script> -->
+    <!-- <script type="Module">
+        import CalculateClass from './CalculateClass.js';
+        let calc = new CalculateClass();
+        let outVal = calc.printDetails(5);
+        console.log(outVal);
+    </script> -->
 </head>
 <body>
     

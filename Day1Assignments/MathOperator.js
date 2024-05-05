@@ -1,53 +1,33 @@
 
-export class SumFunction {
-    output;
-    constructor(a,b) {
-        this.output = (a+b);
-        return this.output;
-    }
+export function sumFunction(a,b) {
+    let output = (a+b);
+    return output;
 }
 
-export class SubFunction {
-    output;
-    constructor(a,b) {
-        this.output = (a-b);
-        return this.output;
-    }
+export function subFunction(a,b) {
+    let output = (a-b);
+    return output;
 }
 
-export class MultFunction {
-    output;
-    constructor(a,b) {
-        this.output = (a*b);
-        return this.output;
-    }
+export function multFunction(a,b) {
+    let output = (a*b);
+    return output;
 }
 
-export class DivFunction {
-    output;
-    constructor(a,b) {
-        if(b!=0){
-            this.output = (a/b);
-        }else{
-            this.output = 0;
-        }
-        
-        return this.output;
+export function divFunction(a,b) {
+    let output;
+    if(b!=0){
+        output = (a/b);
+    }else{
+        output = 0;
     }
+    
+    return output;
 }
 
-class SquareFunction {
-    input1;
-    output;
-    constructor(a) {
-        this.output = a*a;
-        return this.output;
-    }
-
-    cubeFunction(a){
-        this.output = a*a*a;
-        return this.output;
-    }
+function SquareFunction(a) {
+    let output = a*a;
+    return output;
 }
 
 export default SquareFunction;
