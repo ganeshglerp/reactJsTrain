@@ -1,0 +1,13 @@
+.container{
+    text-align: center;
+    width:40%;
+    background-color: #cde6eb;
+    margin: auto;
+    margin-top:20px;
+    padding:10px;
+    border-radius: 10px;
+}
+.form-details{
+    text-align: right;
+    width:70%;
+}

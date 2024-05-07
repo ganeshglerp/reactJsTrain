@@ -1,0 +1,42 @@
+.table{
+    border-collapse: collapse;
+    overflow:scroll;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.tablediv{
+    overflow:auto;
+    height:500px;
+}
+
+table.details{
+    table-layout: fixed;
+    margin: auto;
+  }
+  
+td{
+    text-align: left;
+    padding :10px;
+}
+
+img {
+    height: 50px;
+    width: 50px;
+}
+
+h1{
+    background-color: darkcyan;
+    margin:auto;
+    height:50px;
+}
+
+.container{
+    text-align: center;
+    width:80%;
+    background-color: #cde6eb;
+    margin: auto;
+    margin-top:20px;
+    padding:10px;
+    border-radius: 10px;
+}
